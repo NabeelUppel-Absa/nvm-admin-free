@@ -1,7 +1,7 @@
 Open Powershell and run:
 1. `cd $Env:USERPROFILE`;
 
-2. `Invoke-WebRequest https://raw.githubusercontent.com/jchip/nvm/v1.9.0/install.ps1 -OutFile install.ps1;`
+2. `Invoke-WebRequest https://raw.githubusercontent.com/NabeelUppel-Absa/nvm-admin-free/main/install.ps1 -OutFile install.ps1;`
 
    a. This might fail the first time around, just run it again and it should be fine
 
