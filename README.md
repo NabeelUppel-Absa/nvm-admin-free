@@ -14,14 +14,14 @@ Set-ExecutionPolicy RemoteSigned -Scope Process
 
 ### Step 3: Download the installer script
 ```powershell
-Invoke-WebRequest https://raw.githubusercontent.com/NabeelUppel-Absa/nvm-admin-free/main/install.ps1 -OutFile install.ps1;
+Invoke-WebRequest https://raw.githubusercontent.com/NabeelUppel-Absa/nvm-admin-free/main/installer.ps1 -OutFile installer.ps1;
 ```
 Note:
 This might fail the first time around. If it does, simply run it again.
 
 ### Step 4: Run the installer
 ```powershell
-\install.ps1 -nvmhome $Env:USERPROFILE\nvm;
+\installer.ps1 -nvmhome $Env:USERPROFILE\nvm;
 ```
 
 ### Step 5: Clean up
