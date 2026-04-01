@@ -21,12 +21,12 @@ This might fail the first time around. If it does, simply run it again.
 
 ### Step 4: Run the installer
 ```powershell
-\installer.ps1 -nvmhome $Env:USERPROFILE\nvm;
+.\installer.ps1 -nvmhome $Env:USERPROFILE\nvm;
 ```
 
 ### Step 5: Clean up
 ```powershell
-\install.ps1 -nvmhome $Env:USERPROFILE\nvm;
+del installer.ps1
 ```
 
 <br>
