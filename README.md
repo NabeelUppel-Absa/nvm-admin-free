@@ -54,3 +54,7 @@ nvm use 14.21.3
 node -v
 ```
 
+<br>
+
+## Credit
+https://github.com/jchip/nvm?tab=readme-ov-file#installing-universal-nvm-on-windows-using-powershell
