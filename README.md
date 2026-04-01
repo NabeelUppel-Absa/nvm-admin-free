@@ -23,6 +23,8 @@ This might fail the first time around. If it does, simply run it again.
 ```powershell
 .\installer.ps1 -nvmhome $Env:USERPROFILE\nvm;
 ```
+Note:
+If you see red, simply run it again.
 
 ### Step 5: Clean up
 ```powershell
