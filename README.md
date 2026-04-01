@@ -1,41 +1,56 @@
-Open Powershell and run:
-1. `cd $Env:USERPROFILE`;
+## Installation (Admin‑Free)
 
-2. `Invoke-WebRequest https://raw.githubusercontent.com/NabeelUppel-Absa/nvm-admin-free/main/install.ps1 -OutFile install.ps1;`
+Open **PowerShell** and run the following commands **exactly as shown**.
 
-   a. This might fail the first time around, just run it again and it should be fine
-
-3. `.\install.ps1 -nvmhome $Env:USERPROFILE\nvm;`
-   
-If you see the following error
+### Step 1: Change to your user directory
+```powershell
+cd $Env:USER
 ```
-. \ install. psl :File cannot be Loaded because running scripts is disabled on this system.
-For more information, see about_Execution_PoLicies at https:/go.microsoft.com/fwIink/?LinkID=13517@.
-At line: 1 char: 1
-+ .\install.psl —nvmhome $Env:USERPROFILE\nvm;
-+ ~~~~~~~~~~~~~
-+ CategoryInfo 			: SecurityError: [ ], PSSecurityException
-+ FullyQualifiedErrorId	:UnauthorizedAccess
+
+### Step 2: Allow script execution in the current session
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope Process
 ```
-   
-   a. Run this command `Set-ExecutionPolicy RemoteSigned -Scope Process` and follow the prompts
-   
-   b. Run step 3 again.
 
+### Step 3: Download the installer script
+```powershell
+Invoke-WebRequest https://raw.githubusercontent.com/NabeelUppel-Absa/nvm-admin-free/main/install.ps1 -OutFile install.ps1;
+```
+Note:
+This might fail the first time around. If it does, simply run it again.
 
-4. `del install.ps1`
+### Step 4: Run the installer
+```powershell
+\install.ps1 -nvmhome $Env:USERPROFILE\nvm;
+```
 
+### Step 5: Clean up
+```powershell
+\install.ps1 -nvmhome $Env:USERPROFILE\nvm;
+```
 
+<br>
 
+## Verify Installation
+```powershell
+nvm -v
+```
 
+<br>
 
+## Installing and Using Node.js
+### Install a Node.js version
+```powershell
+nvm install 14.21.3
+```
 
-To test that everything has installed correctly `run nvm -v`
-From here you can install a version of node 
+### Use the installed version
+```powershell
+nvm use 14.21.3
+```
 
-1. `nvm install 14.21.3`
-
-2. `nvm use 14.21.3`
-
-3. `node -v` as a sanity and confirmation check
+### Verify Node.js is active
+```powershell
+node -v
+```
 
