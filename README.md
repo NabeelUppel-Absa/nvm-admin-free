@@ -60,3 +60,11 @@ node -v
 
 ## Credit
 https://github.com/jchip/nvm?tab=readme-ov-file#installing-universal-nvm-on-windows-using-powershell
+
+<br>
+
+## Issues
+```
+Error: self—signed certificate in certificate chain
+```
+https://absa.atlassian.net/wiki/spaces/CAIS/pages/4238115127/How+to+Install+and+use+NVM#Issues
